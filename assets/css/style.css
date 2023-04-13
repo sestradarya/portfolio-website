@@ -1,0 +1,35 @@
+@import url(./reset.css);
+
+
+
+:root{
+
+    --main-color: hsl(207, 90%, 61%);
+    --main-color-alt: hsl(207, 90%, 57%);
+    --title-color: hsl(207, 12%, 15%);
+    --text-color: hsl(207, 12%, 45%);
+    --text-color-light: hsl(207, 8%, 75%);
+    --text-color-lighten: hsl(207, 8%, 99%);
+    --body-color: hsl(207, 100%, 99%);
+    --container-color: #fff
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3{
+    color: var(--title-color);
+    font-weight: 600;
+}
+
+  
