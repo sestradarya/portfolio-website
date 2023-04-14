@@ -1,35 +1,288 @@
 @import url(./reset.css);
 
-
-
-:root{
-
-    --main-color: hsl(207, 90%, 61%);
-    --main-color-alt: hsl(207, 90%, 57%);
-    --title-color: hsl(207, 12%, 15%);
-    --text-color: hsl(207, 12%, 45%);
-    --text-color-light: hsl(207, 8%, 75%);
-    --text-color-lighten: hsl(207, 8%, 99%);
-    --body-color: hsl(207, 100%, 99%);
-    --container-color: #fff
+:root {
+  --main-color: hsl(207, 90%, 61%);
+  --main-color-alt: hsl(207, 90%, 57%);
+  --title-color: hsl(207, 12%, 15%);
+  --text-color: hsl(207, 12%, 45%);
+  --text-color-light: hsl(207, 8%, 75%);
+  --text-color-lighten: hsl(207, 8%, 92%);
+  --body-color: hsl(207, 100%, 99%);
+  --container-color: #fff;
 }
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-    font-size: .9rem;
-    background-color: var(--body-color);
-    color: var(--text-color);
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  background-color: var(--body-color);
+  color: var(--text-color);
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 968px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.profile {
+  position: relative;
+  padding-top: 3.5rem;
+}
+
+.profile-container {
+  row-gap: 2rem;
+}
+
+.profile-data {
+  display: grid;
+  text-align: center;
+}
+
+.profile-border {
+  border: 3.5px solid var(--main-color);
+  justify-self: center;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.75rem;
+}
+.profile-perfil {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(
+    180deg,
+    rgb(177, 127, 191) 0%,
+    rgba(179, 96, 154, 0.2) 100%
+  );
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.profile-perfil img {
+  width: 75px;
+}
+
+.profile-name {
+  font-size: 1.25rem;
+}
+
+.profile-profession {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.profile-social {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.profile-social-link {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  transition: 0.3s;
+}
+
+.profile-social-link:hover {
+  color: var(--main-color);
+}
+
+.profile-buttons,
+.profile-buttons-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-buttons{
+    gap: 1rem;
+}
+
+.profile-buttons-small{
+    gap: 0.25rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 1.15rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  box-shadow: 0 8px 24px hsla(207, 90%, 61%, 0.25);
+}
+
+.button i {
+  font-size: 1.25rem;
+}
+
+.button:hover {
+  background-color: var(--main-color-alt);
+}
+
+.button-small {
+  padding: 0.74rem;
+  box-shadow: none;
+}
+
+.button-gray {
+  background-color: var(--text-color-lighten);
+  color: var(--text-color);
+}
+
+.button-gray:hover {
+  background-color: var(--text-color-light);
+}
+
+
+
+.filters-content {
+    margin: 2rem 0 2.5rem;
+    background-color: var(--text-color-lighten);
+    padding: .375rem;
+    border-radius: .75rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.filters-button {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem;
     color: var(--title-color);
-    font-weight: 600;
+    font-size: .8rem;
+    font-family: inherit;
+    font-weight: 500;
+    border-radius: .75rem;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .3s;
 }
 
-  
+.filters-button:hover{
+    background-color: var(--body-color);
+}
+
+.projects-card {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.projects-card:hover .projects-modal{
+    bottom: 0;
+}
+
+.projects-card img{
+    width: 100%;
+    height: 100%;
+}
+
+.projects-modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+    background: linear-gradient(180deg, hsla(207, 24%, 40%, .3) 0%,
+    hsla(207, 24%, 4%, 1) 95%);
+
+    display: grid;
+    align-items: flex-end;
+    padding: 1.5rem 1.25rem;
+    transition: .3s;
+}
+
+.projects-subtitle, .projects-title {
+    color: #fff;
+}
+
+.projects-subtitle{
+    font-size: .75rem;
+}
+
+.projects-title {
+    font-size: 1.35rem;
+    margin-bottom: .75rem;
+}
+
+.projects-button {
+    padding: .5rem;
+}
+
+.skills-content {
+    row-gap: 3.5rem;
+}
+
+.skills-area {
+}
+
+.skills-box {
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+.skills-group {
+    display: grid;
+    align-content: flex-start;
+    row-gap: 1rem;
+}
+
+.skills-data {
+    display: flex;
+    column-gap: .5rem;
+}
+
+.skills-data i{
+    font-size: 1rem;
+    color: var(--main-color);
+}
+
+.skills-name {
+    font-size: .94rem;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.filters [data-content]{
+    display: none;
+}
+
+.filters-active[data-content]{
+    display: grid;
+}
