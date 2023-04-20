@@ -17,7 +17,7 @@ tabs.forEach(tab => {
     })
 })
 
-
+// Theme toggler
 
 const themeButton = document.getElementById('theme-button')
 const selectedItem = localStorage.getItem('selected-theme')
@@ -36,6 +36,25 @@ if(selectedItem){
 
 themeButton.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme')
-    
     localStorage.setItem('selected-theme', getCurrentTheme())
 })
+
+
+// Scroll animation 
+
+const scroll = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400
+})
+
+scroll.reveal(`.profile-border`)
+scroll.reveal(`.profile-name`, {delay: 500})
+scroll.reveal(`.profile-profession`, {delay: 600})
+scroll.reveal(`.profile-social`, {delay: 700})
+scroll.reveal(`.profile-buttons`, {delay: 800})
+scroll.reveal(`.filters-content`, {delay: 900})
+scroll.reveal(`.filters`, {delay: 1000})
+
+

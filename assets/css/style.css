@@ -1,14 +1,19 @@
 @import url(./reset.css);
 
+
 :root {
-  --main-color: hsl(207, 90%, 61%);
-  --main-color-alt: hsl(207, 90%, 57%);
+  --main-color: #fb8b24;
+  --main-color-alt: #e36414;
   --title-color: hsl(207, 12%, 15%);
   --text-color: hsl(207, 12%, 45%);
-  --text-color-light: hsl(207, 8%, 75%);
+  --text-color-light: hsl(0, 0%, 76%);
   --text-color-lighten: hsl(207, 8%, 92%);
-  --body-color: hsl(207, 100%, 99%);
+  --body-color: #ffffff;
   --container-color: #fff;
+}
+
+html{
+  font-size: 18px;
 }
 
 * {
@@ -90,20 +95,21 @@ img {
 .profile-border {
   border: 3.5px solid var(--main-color);
   justify-self: center;
-  width: 115px;
-  height: 115px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   display: grid;
   place-items: center;
   margin-bottom: 0.75rem;
 }
+
 .profile-perfil {
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   background: linear-gradient(
     180deg,
-    rgb(177, 127, 191) 0%,
-    rgba(179, 96, 154, 0.2) 100%
+    rgb(191, 165, 127) 0%,
+    rgba(179, 137, 96, 0.2) 100%
   );
   border-radius: 50%;
   overflow: hidden;
@@ -113,7 +119,7 @@ img {
 }
 
 .profile-perfil img {
-  width: 75px;
+  width: 120px;
 }
 
 .profile-name {
@@ -121,10 +127,10 @@ img {
 }
 
 .profile-profession {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--text-color);
-  margin-bottom: 1rem;
+  margin: 0.2rem 0 1rem;
 }
 
 .profile-social {
@@ -359,7 +365,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #73c0fc;
+  background-color: #fb8b24;
   transition: 0.4s;
   border-radius: 30px;
 }
@@ -387,7 +393,7 @@ img {
 }
 
 .moon svg {
-  fill: #73c0fc;
+  fill: #FFEB3B;
   position: absolute;
   top: 5px;
   left: 5px;
@@ -435,11 +441,11 @@ img {
 }
 
 .input:checked + .slider {
-  background-color: #183153;
+  background-color: #622b0a;
 }
 
 .input:focus + .slider {
-  box-shadow: 0 0 1px #183153;
+  box-shadow: 0 0 1px #622b0a;
 }
 
 .input:checked + .slider:before {
@@ -457,8 +463,8 @@ img {
 body.dark-theme {
   --title-color: hsl(207, 12%, 95%);
   --text-color: hsl(207, 12%, 75%);
-  --body-color: hsl(207, 40%, 8%);
-  --container-color: hsl(207, 24%, 12%);
+  --body-color: #1a0c03;
+  --container-color: #622b0a;
 }
 
 
