@@ -54,7 +54,8 @@ scroll.reveal(`.profile-name`, {delay: 500})
 scroll.reveal(`.profile-profession`, {delay: 600})
 scroll.reveal(`.profile-social`, {delay: 700})
 scroll.reveal(`.profile-buttons`, {delay: 800})
-scroll.reveal(`.filters-content`, {delay: 900})
-scroll.reveal(`.filters`, {delay: 1000})
+scroll.reveal(`.certificates-buttons`, {delay: 900})
+scroll.reveal(`.filters-content`, {delay: 1000})
+scroll.reveal(`.filters`, {delay: 1100})
 
 
