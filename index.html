@@ -1,274 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
     <header class="profile container">
+      <label class="switch change-theme">
+        <span class="sun"
+          ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <g fill="#FFEB3B">
+              <circle r="5" cy="12" cx="12"></circle>
+              <path
+                d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"
+              ></path>
+            </g></svg
+        ></span>
+        <span class="moon"
+          ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <path
+              d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
+            ></path></svg
+        ></span>
+        <input type="checkbox" class="input" id="theme-button" />
+        <span class="slider"></span>
+      </label>
 
-        <label class="switch change-theme">
-            <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#FFEB3B"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
-            <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
-            <input type="checkbox" class="input" id="theme-button">
-            <span class="slider"></span>
-        </label>
-
-
-        <div class="profile-container grid">
-            <div class="profile-data">
-                <div class="profile-border">
-                    <div class="profile-perfil">
-                        <img src="./assets/images/портфолио-фото-2.jpg" alt="">
-                    </div>
-                </div>
-                <h2 class="profile-name">Darina Nhuien</h2>
-                <h3 class="profile-profession">Frontend developer</h3>
-                <ul class="profile-social">
-                    <a href="http://instagram.com/_u/darisha_01.10/" target="_blank" class="profile-social-link">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/darina-nhuien-a25b26255/" target="_blank" class="profile-social-link">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/sestradarya" target="_blank" class="profile-social-link">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </ul>
+      <div class="profile-container grid">
+        <div class="profile-data">
+          <div class="profile-border">
+            <div class="profile-perfil">
+              <img src="./assets/images/photo_2023-06-20_19-43-35.jpg" alt="" />
             </div>
-
-            <div class="profile-buttons">
-                <a href="./assets/images/Darina Nguen.pdf" download class="button">
-                    Download CV <i class="fa-solid fa-download"></i>
-                </a>
-
-                <div class="profile-buttons-small">
-                    <a href="https://wa.me/662496795" target="_blank" class="button button-small button-gray">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-
-                    <a href="mailto:nguendarina@gmail.com" target="_blank" class="button button-small button-gray">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="certificates-buttons">
-                <h3>Certificates</h3>
-                <div class="certificates">
-                    <div>
-                        <div class="certificate-name">
-                            <p> <img src="./assets/images/scrimba.jpg" alt="">    <br> "The Frontend Developer Career Path"</p>
-                        </div>
-                        <div class="buttons">
-                            <a class="button" href="./assets/images/CERTIFICATE OF COMPLETION - The Frontend Developer Career Path.pdf" download><i class="fa-solid fa-download"></i></a>
-                            <a class="button" href="https://scrimba.com/certificate/uxKL56AV/gfrontend"><i class="fa-solid fa-link"></i></a>
-                        </div>
-                    </div>
-                    <hr>
-                    <div>
-                        <div class="certificate-name">
-                            <p><img src="./assets/images/fcc.jpg" alt="">   <br> JavaScript Algorithms and Data Structures</p>
-                        </div>
-                        <div class="buttons">
-                            <a class="button" href="https://www.freecodecamp.org/certification/darina_0110/javascript-algorithms-and-data-structures"><i class="fa-solid fa-link"></i></a>
-                        </div>
-                    </div>
-                    <hr>
-                    <div>
-                        <div class="certificate-name">
-                            <p><img src="./assets/images/epam.png" alt=""> <br> IT Marathon</p>  
-                        </div>
-                        <div class="buttons">
-                            <a class="button" href="./assets/images/Darina Nguen.pdf" download><i class="fa-solid fa-download"></i></a>
-                        </div>
-                    </div>
-                </div>
-                    
-            </div>
+          </div>
+          <h2 class="profile-name">Darina Nhuien</h2>
+          <h3 class="profile-profession">Frontend developer</h3>
+          <ul class="profile-social">
+            <a
+              href="http://instagram.com/_u/darisha_01.10/"
+              target="_blank"
+              class="profile-social-link"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/darina-nhuien-a25b26255/"
+              target="_blank"
+              class="profile-social-link"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/sestradarya"
+              target="_blank"
+              class="profile-social-link"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </ul>
         </div>
+
+        <div class="profile-buttons">
+          <a href="./assets/images/resume.pdf" download class="button">
+            Download CV <i class="fa-solid fa-download"></i>
+          </a>
+
+          <div class="profile-buttons-small">
+            <a
+              href="https://wa.me/662496795"
+              target="_blank"
+              class="button button-small button-gray"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a
+              href="mailto:nguendarina@gmail.com"
+              target="_blank"
+              class="button button-small button-gray"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="certificates-buttons">
+          <h3>Certificates</h3>
+          <div class="certificates">
+            <div>
+              <div class="certificate-name">
+                <p>
+                  <img src="./assets/images/scrimba.jpg" alt="" /> <br />
+                  "The Frontend Developer Career Path"
+                </p>
+              </div>
+              <div class="buttons">
+                <a
+                  class="button"
+                  href="./assets/images/CERTIFICATE OF COMPLETION - The Frontend Developer Career Path.pdf"
+                  download
+                  ><i class="fa-solid fa-download"></i
+                ></a>
+                <a
+                  class="button"
+                  href="https://scrimba.com/certificate/uxKL56AV/gfrontend"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+            <hr />
+            <div>
+              <div class="certificate-name">
+                <p>
+                  <img src="./assets/images/fcc.jpg" alt="" /> <br />
+                  JavaScript Algorithms and Data Structures
+                </p>
+              </div>
+              <div class="buttons">
+                <a
+                  class="button"
+                  href="https://www.freecodecamp.org/certification/darina_0110/javascript-algorithms-and-data-structures"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+            <hr />
+            <div>
+              <div class="certificate-name">
+                <p>
+                  <img src="./assets/images/epam.png" alt="" /> <br />
+                  IT Marathon
+                </p>
+              </div>
+              <div class="buttons">
+                <a
+                  class="button"
+                  href="./assets/images/Darina Nguen.pdf"
+                  download
+                  ><i class="fa-solid fa-download"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main class="main">
-        <section class="filters container">
+      <section class="filters container">
+        <ul class="filters-content">
+          <button
+            class="filters-button filter-tab-active"
+            data-target="#skills"
+          >
+            Skills
+          </button>
+          <button class="filters-button" data-target="#projects">
+            Projects
+          </button>
+        </ul>
 
-            <ul class="filters-content">
-                <button class="filters-button filter-tab-active" data-target="#skills">
-                    Skills
-                </button>
-                <button class="filters-button" data-target="#projects">
-                    Projects
-                </button>
-            </ul>
+        <div class="filters-sections">
+          <div class="filters-active" data-content id="skills">
+            <div class="skills-area">
+              <div class="skills-box">
+                <div class="skills-group">
+                  <div class="skills-data">
+                    <i class="fa-regular fa-square-check"></i>
 
-            <div class="filters-sections">
-                <div class="filters-active" data-content id="skills">
-                    <div class="skills-area">
-                        <div class="skills-box">
-                            <div class="skills-group">
-                                <div class="skills-data">
-                                    <i class="fa-regular fa-square-check"></i>
-
-                                    <div>
-                                        <h3 class="skills-name">HTML</h3>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <i class="fa-regular fa-square-check"></i>
-
-                                    <div>
-                                        <h3 class="skills-name">CSS</h3>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <i class="fa-regular fa-square-check"></i>
-
-                                    <div>
-                                        <h3 class="skills-name">Java Script</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skills-group">
-                                <div class="skills-data">
-                                    <i class="fa-regular fa-square-check"></i>
-
-                                    <div>
-                                        <h3 class="skills-name">React</h3>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <i class="fa-regular fa-square-check"></i>
-
-                                    <div>
-                                        <h3 class="skills-name">SQL(MySQL)</h3>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <i class="fa-regular fa-square-check"></i>
-
-                                    <div>
-                                        <h3 class="skills-name">Git</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div>
+                      <h3 class="skills-name">HTML</h3>
                     </div>
+                  </div>
+                  <div class="skills-data">
+                    <i class="fa-regular fa-square-check"></i>
+
+                    <div>
+                      <h3 class="skills-name">CSS</h3>
+                    </div>
+                  </div>
+                  <div class="skills-data">
+                    <i class="fa-regular fa-square-check"></i>
+
+                    <div>
+                      <h3 class="skills-name">Java Script</h3>
+                    </div>
+                  </div>
                 </div>
+                <div class="skills-group">
+                  <div class="skills-data">
+                    <i class="fa-regular fa-square-check"></i>
 
+                    <div>
+                      <h3 class="skills-name">React</h3>
+                    </div>
+                  </div>
+                  <div class="skills-data">
+                    <i class="fa-regular fa-square-check"></i>
 
-                <div class="projects-content grid" data-content id="projects">
-                    <article class="projects-card">
-                        <img src="./assets/images/movie.jpg" alt="" class="projects-img">
+                    <div>
+                      <h3 class="skills-name">SQL(MySQL)</h3>
+                    </div>
+                  </div>
+                  <div class="skills-data">
+                    <i class="fa-regular fa-square-check"></i>
 
-                        <div class="projects-modal">
-                            <div class="">
-                                <span class="projects-subtitle">Web</span>
-                                <h3 class="projects-title">Movie app</h3>
-                                <a href="https://filmy-searcher.netlify.app/index.html" class="projects-button button button-small">
-                                    <i class="fa-solid fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="projects-card">
-                        <img src="./assets/images/dictionary.jpg" alt="" class="projects-img">
-
-                        <div class="projects-modal">
-                            <div class="">
-                                <span class="projects-subtitle">Web</span>
-                                <h3 class="projects-title">Dictionary app (React)</h3>
-                                <a href="https://my-dict.netlify.app/dictionary" class="projects-button button button-small">
-                                    <i class="fa-solid fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="projects-card">
-                        <img src="./assets/images/quizz.jpg" alt="" class="projects-img">
-
-                        <div class="projects-modal">
-                            <div class="">
-                                <span class="projects-subtitle">Web</span>
-                                <h3 class="projects-title">Quizz game (React)</h3>
-                                <a href="https://brainly-quizzgame.netlify.app/" class="projects-button button button-small">
-                                    <i class="fa-solid fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="projects-card">
-                        <img src="./assets/images/weather.jpg" alt="" class="projects-img">
-
-                        <div class="projects-modal">
-                            <div class="">
-                                <span class="projects-subtitle">Web</span>
-                                <h3 class="projects-title">Weather app</h3>
-                                <a href="https://weatherapp-by-me.netlify.app/#/current-location" class="projects-button button button-small">
-                                    <i class="fa-solid fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="projects-card">
-                        <img src="./assets/images/landing.jpg" alt="" class="projects-img">
-
-                        <div class="projects-modal">
-                            <div class="">
-                                <span class="projects-subtitle">Web</span>
-                                <h3 class="projects-title">Landing page</h3>
-                                <a href="https://meek-kitsune-c7102f.netlify.app/" class="projects-button button button-small">
-                                    <i class="fa-solid fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="projects-card">
-                        <img src="./assets/images/camomile.jpg" alt="" class="projects-img">
-
-                        <div class="projects-modal">
-                            <div class="">
-                                <span class="projects-subtitle">Web</span>
-                                <h3 class="projects-title">Medical center</h3>
-                                <a href="https://camomile-medical-center.netlify.app/" class="projects-button button button-small">
-                                    <i class="fa-solid fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="projects-card">
-                        <img src="./assets/images/calculator.jpg" alt="" class="projects-img">
-
-                        <div class="projects-modal">
-                            <div class="">
-                                <span class="projects-subtitle">Web</span>
-                                <h3 class="projects-title">Calculator site</h3>
-                                <a href="https://calculatorapp-by-me.netlify.app/" class="projects-button button button-small">
-                                    <i class="fa-solid fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                    <div>
+                      <h3 class="skills-name">Git</h3>
+                    </div>
+                  </div>
                 </div>
-
-                
-
+              </div>
             </div>
+          </div>
 
-        </section>
+          <div class="projects-content grid" data-content id="projects">
+            <article class="projects-card">
+              <img
+                src="./assets/images/movie.jpg"
+                alt=""
+                class="projects-img"
+              />
+
+              <div class="projects-modal">
+                <div class="">
+                  <span class="projects-subtitle">Web</span>
+                  <h3 class="projects-title">Movie app</h3>
+                  <a
+                    href="https://filmy-searcher.netlify.app/index.html"
+                    class="projects-button button button-small"
+                  >
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="projects-card">
+              <img
+                src="./assets/images/dictionary.jpg"
+                alt=""
+                class="projects-img"
+              />
+
+              <div class="projects-modal">
+                <div class="">
+                  <span class="projects-subtitle">Web</span>
+                  <h3 class="projects-title">Dictionary app (React)</h3>
+                  <a
+                    href="https://my-dict.netlify.app/dictionary"
+                    class="projects-button button button-small"
+                  >
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="projects-card">
+              <img
+                src="./assets/images/quizz.jpg"
+                alt=""
+                class="projects-img"
+              />
+
+              <div class="projects-modal">
+                <div class="">
+                  <span class="projects-subtitle">Web</span>
+                  <h3 class="projects-title">Quizz game (React)</h3>
+                  <a
+                    href="https://brainly-quizzgame.netlify.app/"
+                    class="projects-button button button-small"
+                  >
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="projects-card">
+              <img
+                src="./assets/images/weather.jpg"
+                alt=""
+                class="projects-img"
+              />
+
+              <div class="projects-modal">
+                <div class="">
+                  <span class="projects-subtitle">Web</span>
+                  <h3 class="projects-title">Weather app</h3>
+                  <a
+                    href="https://weatherapp-by-me.netlify.app/#/current-location"
+                    class="projects-button button button-small"
+                  >
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="projects-card">
+              <img
+                src="./assets/images/landing.jpg"
+                alt=""
+                class="projects-img"
+              />
+
+              <div class="projects-modal">
+                <div class="">
+                  <span class="projects-subtitle">Web</span>
+                  <h3 class="projects-title">Landing page</h3>
+                  <a
+                    href="https://meek-kitsune-c7102f.netlify.app/"
+                    class="projects-button button button-small"
+                  >
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="projects-card">
+              <img
+                src="./assets/images/camomile.jpg"
+                alt=""
+                class="projects-img"
+              />
+
+              <div class="projects-modal">
+                <div class="">
+                  <span class="projects-subtitle">Web</span>
+                  <h3 class="projects-title">Medical center</h3>
+                  <a
+                    href="https://camomile-medical-center.netlify.app/"
+                    class="projects-button button button-small"
+                  >
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="projects-card">
+              <img
+                src="./assets/images/calculator.jpg"
+                alt=""
+                class="projects-img"
+              />
+
+              <div class="projects-modal">
+                <div class="">
+                  <span class="projects-subtitle">Web</span>
+                  <h3 class="projects-title">Calculator site</h3>
+                  <a
+                    href="https://calculatorapp-by-me.netlify.app/"
+                    class="projects-button button button-small"
+                  >
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer container">
-        <span class="footer-copy">
-            &#169; Darina Nhuien
-        </span>
+      <span class="footer-copy"> &#169; Darina Nhuien </span>
     </footer>
-    
+
     <script src="./node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="./assets/js/script.js"></script>
-</body>
+  </body>
 </html>
